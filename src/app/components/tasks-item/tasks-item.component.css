@@ -1,0 +1,22 @@
+.task {
+    background: white;
+    transition: box-shadow 0.3s ease;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .task:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+
+  }
+  
+  .task.reminder {
+    border-left: 5px solid green;
+  }
+  
+  .task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
