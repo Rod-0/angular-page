@@ -1,4 +1,4 @@
 <div class="task">
-    <h3>{{task.text}} <fa-icon [icon]="faXmark" ></fa-icon></h3>
+    <h3>{{task.text}} <fa-icon (click)="onDelete(task)" [icon]="faXmark" class="icon" ></fa-icon></h3>
     <p>{{task.day}}</p>
 </div>

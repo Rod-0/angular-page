@@ -3,7 +3,11 @@
     transition: box-shadow 0.3s ease;
     margin: 5px;
     padding: 10px 20px;
-    cursor: pointer;
+    
+  }
+
+  .icon{
+    cursor: pointer; 
   }
 
   .task:hover{
