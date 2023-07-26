@@ -3,6 +3,7 @@ import { Task } from 'src/app/Task';
 
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
+
 @Component({
   selector: 'app-tasks-item',
   templateUrl: './tasks-item.component.html',
@@ -14,6 +15,7 @@ export class TasksItemComponent  implements OnInit{
   @Output() onDeleteTask:EventEmitter<Task>=new EventEmitter()
   @Output() onToggleReminder:EventEmitter<Task>=new EventEmitter()
   faXmark=faXmark;
+
 
  constructor(){}
 
