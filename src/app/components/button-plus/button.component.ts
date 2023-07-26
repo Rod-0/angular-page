@@ -2,11 +2,11 @@ import { Component,OnInit,Input,Output,EventEmitter  } from '@angular/core';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-button',
+  selector: 'app-button-plus',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponentPlus implements OnInit {
   faPlus=faPlus;
   @Input()
   text!: string;

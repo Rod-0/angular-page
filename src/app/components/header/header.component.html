@@ -1,5 +1,9 @@
 <header>
     <h1>{{title}}</h1>
-    <app-button (btnClick)="toggleAddTask()"></app-button>
+    <div *ngIf="showAddTask==true">
+        <app-button-plus (btnClick)="toggleAddTask()"></app-button-plus>
+    </div>
+    <div #elseBlock><app-button-minus (btnClick)="toggleAddTask()"></app-button-minus></div>
+   
 </header>
 

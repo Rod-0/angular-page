@@ -11,14 +11,14 @@ import {Subscription} from 'rxjs';
 })
 export class HeaderComponent implements OnInit {
   title: string = 'angular-page';
-  showAddTask: boolean=true;
+  showAddTask: boolean=false;
   subscription!: Subscription;
  constructor(private uiService:UiService){}
 
  ngOnInit(): void {}
 
  toggleAddTask(){
-  console.log(123);
+  this.uiService.toggleAddTask();
  }
   
 }
